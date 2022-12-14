@@ -4,11 +4,25 @@
   box-sizing: border-box;
 }
 :root{
-  --purple1(#2E0D75)
-  --purple2(#5710A8)
+  --purple1: #2E0D75;
+  --purple2: #5710A8;
+  --green1: #8FF3B3;
+  --md-fsize: 1.7rem;
 }
 html{
   height: 100%;
-  font-family: 'Josefin Sans', sans-serif;;
-  background: linear-gradient(#5710A8,#2E0D75);
+  font-family: 'Josefin Sans', sans-serif;
+  background: linear-gradient(var(--purple2),var(--purple1));
+}
+.barra{
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+.barra li, .barra a{
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--green1);
+  font-size: var(--md-fsize);
+  display: block;
 }
