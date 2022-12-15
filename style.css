@@ -4,17 +4,20 @@
   box-sizing: border-box;
 }
 :root{
-  --purple1: #180d57;
-  --purple2: #4A11A5;
-  --green1: #8FF3B3;
-  --green2: #AFF9A0;
-  --green3: #C8FC9B;
+  --white: #ffffff;
+  --gray: #7e7e7e;
+  --blue1: #220835;
+  --blue2: #40188C;
+  --green1: #7DE2D1;
+  --green2: #339989;
+  --green3: #1b7272;
+  --yellow: #FFBD00;
   --md_fontsize: 1.7rem;
 }
 html{
   height: 100%;
   font-family: 'Josefin Sans', sans-serif;
-  background: linear-gradient(var(--purple2),var(--purple1));
+  background: linear-gradient(var(--white),var(--green1)) fixed;
 }
 header{
   display: block;
@@ -27,21 +30,64 @@ header{
 .barra li, .barra a{
   list-style-type: none;
   text-decoration: none;
-  color: var(--green1);
+  color: var(--green2);
   font-size: var(--md_fontsize);
+}
+.canvas{
+  width: 100vw;
+  height: 100px;
+}
+.contenido{
+  margin: 0 1rem;
+}
+.nombre{
+  padding-top: 1rem;
 }
 h1{
   display: inline;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .v-claro{
-  color: var(--green2);
+  color: var(--blue1);
 }
 .v-oscuro{
+  color: var(--blue2);
+}
+.lista{
+  font-size: 1.5rem;
+  color: var(--green2);
+  padding-top: 0.25rem;
+}
+.bio{
+  padding-top: 1rem;
+  font-size: 1.25rem;
   color: var(--green3);
 }
 main{
   text-align: center;
 }
-
-
+.tarjetas h2{
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  color: var(--blue2);
+  text-decoration: underline;
+}
+.tarjetas p{
+  padding-top: 0.25rem;
+  color: var(--green3);
+  font-size: 1.25rem;
+}
+.tarjetas ul li{
+  list-style-position: inside;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  list-style-type:disc;
+  color: var(--green2)
+}
+.portafolio h2{
+  color: var(--blue1);
+}
+.portafolio p{
+  font-size: 1.5rem;
+  color: var(--blue1);
+}
